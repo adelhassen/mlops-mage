@@ -2,9 +2,9 @@ training_set:
   object_type: pipeline
   object_uuid: data_preparation
   outdated_after:
-    seconds: 600
-  project: unit_3_observability
-  repo_path: /home/src/mlops/unit_3_observability
+    seconds: 700
+  project: unit_1_data_preparation
+  repo_path: /home/src/mlops/unit_1_data_preparation
   settings:
     build:
       partitions: 1
@@ -13,11 +13,9 @@ xgboost:
   object_uuid: xgboost_training
   outdated_after:
     seconds: 86400
-    weeks: null
   outdated_starting_at:
     hour_of_day: 12
-  project: unit_3_observability
-  repo_path: /home/src/mlops/unit_3_observability
+  project: unit_1_data_preparation
+  repo_path: /home/src/mlops/unit_1_data_preparation
   settings:
-    xgboost:
-      partitions: 1
+    xgboost: {}

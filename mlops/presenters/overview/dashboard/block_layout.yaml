@@ -13,6 +13,7 @@ blocks:
       type: chart_code
     error: null
     name: Distribution of performance metrics
+    name_new: Distribution of performance metrics
     skip_render: false
     type: chart
     uuid: distribution_of_performance_metrics
@@ -25,6 +26,7 @@ blocks:
       type: chart_code
     error: null
     name: Runs by model (Pie chart)
+    name_new: Runs by model (Pie chart)
     skip_render: false
     type: chart
     uuid: runs_by_model__pie_chart_
@@ -58,13 +60,14 @@ blocks:
       - model
       metrics:
       - aggregation: count_distinct
-        column: run_uuid
+        column: run_id
       y_sort_order: descending
       y_tooltip_label_format: return `${value} total runs`
     data_source:
       type: chart_code
     error: null
     name: Total runs by model
+    name_new: Total runs by model
     skip_render: false
     type: chart
     uuid: total_runs_by_model
